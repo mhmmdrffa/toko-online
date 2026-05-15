@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toko Online</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <!-- REGISTER -->
+  <div id="registerPage">
+    <h2>Daftar Akun</h2>
+
+    <input type="text" id="regUser" placeholder="Username">
+    <input type="password" id="regPass" placeholder="Password">
+
+    <button onclick="register()">Daftar</button>
+
+    <p>Sudah punya akun?
+      <a href="#" onclick="showLogin()">Login</a>
+    </p>
+  </div>
+
+  <!-- LOGIN -->
+  <div id="loginPage" style="display:none;">
+    <h2>Login</h2>
+
+    <input type="text" id="loginUser" placeholder="Username">
+    <input type="password" id="loginPass" placeholder="Password">
+
+    <button onclick="login()">Login</button>
+
+    <p>Belum punya akun?
+      <a href="#" onclick="showRegister()">Daftar</a>
+    </p>
+  </div>
+
+  <!-- TOKO -->
+  <div id="shopPage" style="display:none;">
+
+    <h1>TOKO ONLINE RAFFA</h1>
+
+    <div class="produk-container">
+
+      <div class="produk">
+        <h3>Jaket</h3>
+        <p>Rp250.000</p>
+        <button onclick="beli(250000)">Beli</button>
+      </div>
+
+      <div class="produk">
+        <h3>Sepatu</h3>
+        <p>Rp500.000</p>
+        <button onclick="beli(500000)">Beli</button>
+      </div>
+
+      <div class="produk">
+        <h3>Baju</h3>
+        <p>Rp150.000</p>
+        <button onclick="beli(150000)">Beli</button>
+      </div>
+
+      <div class="produk">
+        <h3>Celana</h3>
+        <p>Rp200.000</p>
+        <button onclick="beli(200000)">Beli</button>
+      </div>
+
+      <div class="produk">
+        <h3>Topi</h3>
+        <p>Rp100.000</p>
+        <button onclick="beli(100000)">Beli</button>
+      </div>
+
+    </div>
+
+    <div class="total">
+      <h2>Total Belanja</h2>
+      <p id="total">Rp0</p>
+    </div>
+
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
